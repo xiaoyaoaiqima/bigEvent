@@ -1,0 +1,18 @@
+spring:
+  application:
+    name:
+      bigEvent
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://localhost:3306/big_event
+
+  web:
+    resources:
+      static-locations: classpath:/static/
+  mvc:
+    static-path-pattern: /static/**
+
+server:
+  port: 8881
